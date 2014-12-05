@@ -30,7 +30,10 @@ public class Ex6Test {
         // even size matrix
         int[][] mat = ex6Instance.makeMatrix(10);
         int[][] matRotated = ex6Instance.makeRotatedMatrix(10);
+
+        outputMatrix(mat);
         ex6Instance.rotateMatrix(mat);
+        outputMatrix(mat);
 
         assertTrue("Rotated mat should equals matRotated", ex6Instance.matrixEquals(mat, matRotated));
 
