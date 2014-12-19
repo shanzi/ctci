@@ -19,6 +19,7 @@ public class Ex6Test {
     @Test
     public void testRank() throws Exception {
         int[] array = makeRandomArray();
+        Ex2.suffleArray(array);
         for (int i = 0; i < 20; i++) {
             assertEquals(i, Ex6.rank(array, i));
         }
